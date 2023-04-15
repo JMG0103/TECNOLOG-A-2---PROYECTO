@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9342058abd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/Css/Style.css">
+    <title>MiHogar</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="hero-container">
+        <div class="header-container" id="header">
+            <header>
+                <div class="logo">
+                    <img src="/Img/MiHogar_Logo.png" alt="Logo">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li class="select-item"><a href="#">Inicio</a></li>
+                            <li><a href="#search">Servicios</a></li>
+                            <li><a href="#alquilar">Alquilar</a></li>
+                            <li><a href="#">Vender</a></li>
+                            <li><a href="#">Acerca de</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="hero">
+
+            <div class="info-content">
+                <h2>Descubre las nuevas variedades de inmuebles</h2>
+
+                <div class="btn">
+                    <button>Ver más</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="section-content-1" id="search">
+        <div class="section-content">
+            <div class="titulo-search">
+                <h2>¡Encuentra tu próximo Inmueble!</h2>
+            </div>
+
+            <div class="buscador">
+                <div class="subLogo">
+                    <img src="/Img/MiHogar_Logo_2.png" alt="">
+                </div>
+
+                <div class="inputs-container">
+
+                    <div class="inputs">
+                        <div class="input-search">
+                            <span class="material-symbols-outlined">location_on </span>
+                            <input type="search" placeholder="Busca la ciudad de tu preferencia">
+                        </div>
+
+                        <div class="input-info-container">
+
+                            <div class="input-info">
+
+                                <div class="dropdown">
+                                    <span class="material-symbols-outlined">villa</span>
+                                    <input class="text-box" type="text" placeholder="Tipo de propiedad" readonly>
+                                    <div class="options">
+                                        <div onclick="show('Apartamentos')">Apartamentos</div>
+                                        <div onclick="show('Casa')">Casa</div>
+                                        <div onclick="show('PentHouse')">PentHouse</div>
+                                        <div onclick="show('Edificio')">Edificio</div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="propiedad">
+                                    <span class="material-symbols-outlined">villa</span>
+                                    <input list="browsers" placeholder="Tipo de propiedad" name="browser" id="browser">
+                                </div> -->
+                            </div>
+
+                            <div class="input-info">
+
+
+                                <div class="dropdown2">
+                                    <span class="material-symbols-outlined">bed</span>
+                                    <input class="text-box2" type="text" placeholder="Hab" readonly>
+                                    <div class="options">
+                                        <div onclick="show2('1')">1</div>
+                                        <div onclick="show2('2')">2</div>
+                                        <div onclick="show2('3')">3</div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="habitacion">
+                                    <span class="material-symbols-outlined">bed</span>
+                                    <input type="search" placeholder="Hab" class="input2">
+                                </div> -->
+                            </div>
+
+                            <div class="input-info">
+
+                                <div class="dropdown3">
+                                    <span class="material-symbols-outlined">attach_money</span>
+                                    <input class="text-box3" type="text" placeholder="Precio" readonly>
+                                    <div class="options">
+                                        <div onclick="show3('2,000,000')">2,000,000</div>
+                                        <div onclick="show3('4,000,000')">4,000,000</div>
+                                        <div onclick="show3('6,000,000')">6,000,000</div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="precio">
+                                    <span class="material-symbols-outlined">attach_money</span>
+                                    <input type="search" placeholder="Precio" class="input3">
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button>Buscar</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="inputs">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- SLIDE -->
+    <div class="section-content-2" id="alquilar">
+        <section>
+            <div class="descripcion">
+                <h1>Propiedades en venta</h1>
+                <p>Explora todo nuestro catálogo</p>
+            </div>
+            <div class="slide-content">
+                <div class="slide">
+                    <div class="slide-card" id="card">
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-1.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en punta cana</h2>
+                                <p>Precio de venta: $3,500,000</p>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-2.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en santiago</h2>
+                                <p>Precio de venta: $2,750,000</p>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-3.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en distrito nacional</h2>
+                                <p>Precio de venta: $2,000,000</p>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-4.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en puerto plata</h2>
+                                <p>Precio de venta: $4,000,000</p>
+                            </div>
+                        </div>
+
+
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-5.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en salcedo</h2>
+                                <p>Precio de venta: $3,850,000</p>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="img-card">
+                                <img src="/Img/Inmueble-6.jpg" class="image">
+                            </div>
+
+                            <div class="info">
+                                <h2>Apartamento en samana</h2>
+                                <p>Precio de venta: $3,500,000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-slide">
+                        <i class="fa-solid fa-chevron-left" id="btn-left"></i>
+                        <i class="fa-solid fa-chevron-right" id="btn-right"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <!-- PROPIEDADES -->
+    <div class="section-content-3">
+        <div class="info-section-3">
+            <h2>Propiedades recientes</h2>
+            <p>Descubre lo último en imbuebles</p>
+        </div>
+
+        <div class="content-section-3">
+            <div class="container-all-section-3">
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-7.jpg" alt="">
+                    <div class="Card-desc">
+                        <h3>Punta cana, higuey</h3>
+                        <div class="precio">
+                            <h3>Alquiler</h3>
+                            <p>$4,500,000</p>
+                            <div class="text-info-desc">
+                                <p>Acogedor apartamento de dos habitaciones con impresionantes vistas al centro de la
+                                    ciudad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-8.jpg" alt="" id="Cimg">
+                    <div class="Card-desc">
+                        <h3>Anacaona</h3>
+                        <div class="precio">
+                            <h3>venta</h3>
+                            <p>$3,200,000</p>
+                            <div class="text-info-desc">
+                                <p>Elegante apartamento de lujo en un edificio histórico restaurado, con techos altos y
+                                    detalles arquitectónicos únicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-9.jpg" alt="">
+                    <div class="Card-desc">
+                        <h3>Bella vista</h3>
+                        <div class="precio">
+                            <h3>venta</h3>
+                            <p>$5,800,000</p>
+                            <div class="text-info-desc">
+                                <p>Amplio y luminoso apartamento de tres dormitorios con amplias áreas comunes, perfecto
+                                    para familias y amigos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-10.jpg" alt="">
+                    <div class="Card-desc">
+                        <h3>La esmeralda</h3>
+                        <div class="precio">
+                            <h3>venta</h3>
+                            <p>$6,000,000</p>
+                            <div class="text-info-desc">
+                                <p>Moderno apartamento de tres dormitorios con amplio balcón privado y acabados de alta
+                                    calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-11.jpg" alt="" id="Cimg">
+                    <div class="Card-desc">
+                        <h3>Evaristo Morales</h3>
+                        <div class="precio">
+                            <h3>Alquiler</h3>
+                            <p>$4,300,000</p>
+                            <div class="text-info-desc">
+                                <p>Apartamento de tres dormitorios con amplia sala y acabados modernos
+                                    calidad ubicación céntrica..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Img/Inmueble-12.jpg" alt="">
+                    <div class="Card-desc">
+                        <h3>Playa Dorada</h3>
+                        <div class="precio">
+                            <h3>venta</h3>
+                            <p>$5,600,000</p>
+                            <div class="text-info-desc">
+                                <p>Apartamento totalmente amueblado y equipado con electrodomésticos de última
+                                    generación en una ubicación céntrica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="button2">
+                <button>Ver más</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <div class="section-4">
+
+        <div class="logo-content">
+            <img src="/Img/MiHogar_Logo.png" alt="">
+        </div>
+
+        <div class="section-content-4">
+            <h2>¿Porqué confiar en nosotros?</h2>
+
+            <div class="content-section-4">
+
+                <div class="layout">
+
+                    <div class="card-section-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Seguridad</p>
+                        <div class="info">
+                            <p>Adquiere una propiedad con seguridad y confianza al buscar en nuestro inventario</p>
+                        </div>
+                    </div>
+
+                    <div class="card-section-4">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <p>Cobertura</p>
+                        <div class="info">
+                            <p>Visítanos en Santiago, Punta Cana, Santo Domingo Este y el Distrito Nacional</p>
+                        </div>
+                    </div>
+
+                    <div class="card-section-4">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <p>Asesorías</p>
+                        <div class="info">
+                            <p>Recibe asesoría personalizada por parte de un equipo de agentes bajo un modelo comercial
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-section-4">
+                        <i class="fa-solid fa-building"></i>
+                        <p>Exclusividad</p>
+                        <div class="info">
+                            <p>Proyectos de apartamentos en plano desarrollados por los mejores ingenieros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIOS -->
+    <div class="section-content-5">
+        <div class="content-5-bg">
+
+
+
+            <div class="info">
+                <h2>Testimonio de nuestros clientes</h2>
+                <p>Descubre las opiniones de otros</p>
+            </div>
+
+            <div class="content-5">
+                <div class="testimonios">
+                    <div class="card-testimonios">
+
+                        <div class="profile-img">
+                            <img src="/Img/User 1.jpg" alt="">
+                        </div>
+
+                        <div class="desc">
+                            <div class="nombre">
+                                <p>Marian Rodríguez Catillo</p>
+                            </div>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p>No puedo agradecer lo suficiente al equipo de esta inmobiliaria por su excelente servicio!
+                            Desde el primer momento</p>
+                    </div>
+
+                    <div class="card-testimonios">
+
+                        <div class="profile-img">
+                            <img src="/Img/User 2.jpg" alt="">
+                        </div>
+
+                        <div class="desc">
+                            <div class="nombre">
+                                <p>Carlos Miguel Mateo Peralta</p>
+                            </div>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p>Mi experiencia con esta inmobiliaria fue excelente. Pude encontrar un hogar adecuado y
+                            perfecto para mi familia</p>
+                    </div>
+
+                    <div class="card-testimonios">
+
+                        <div class="profile-img">
+                            <img src="/Img/User 3.jpg" alt="">
+                        </div>
+
+                        <div class="desc">
+                            <div class="nombre">
+                                <p>Tatiana Liriano Soriano</p>
+                            </div>
+
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p>Mi experiencia con esta inmobiliaria fue sin duda la mejor que he tenido en cualquier
+                            transacción de propiedad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fORMULARIO -->
+    <div class="section-content-6">
+        <div class="form-content">
+
+            <div class="container-left">
+                <div class="descripcion">
+                    <h2>Crea tu cuenta</h2>
+                    <p>Te enviaremos los catálogos más recientes</p>
+                </div>
+
+                <div class="img-content">
+                    <img src="/Img/form-img.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="content-rigth">
+                <div class="inputs">
+                    <h2>Nombre completo</h2>
+                    <input type="text">
+                </div>
+
+                <div class="inputs">
+                    <h2>Correo electrónico</h2>
+                    <input type="email">
+                </div>
+
+                <div class="inputs">
+                    <h2>Contraseña</h2>
+                    <input type="password">
+                </div>
+
+                <div class="button3">
+                    <button>Crear cuenta</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="info-footer">
+                <h3>Información de contacto</h3>
+
+                <ul>
+                    <li><a href="#">contacto@MiHogar.com</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">(809)-789-9684</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">(829)-245-7969</a></li>
+                </ul>
+            </div>
+
+            <div class="info-footer">
+                <h3>Servicios</h3>
+
+                <ul>
+                    <li><a href="#">Compra y ventas de Propiedades</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Financiamiento</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Gestión de propiedades</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Distribución nacional</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Soporte al cliente</a></li>
+                </ul>
+            </div>
+
+            <div class="info-footer">
+                <h3>Sucursales</h3>
+
+                <ul>
+                    <li><a href="#">San Pedro de Macorís</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Romana</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Santo Domingo</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Santiago</a></li>
+                </ul>
+
+            </div>
+
+            <div class="info-footer">
+                <h3>Proyectos exclusicvos</h3>
+
+                <ul>
+                    <li><a href="#">Vista Golf</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Villas Marinas</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Paradise Village</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Green One</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Jardines aldest</a></li>
+                </ul>
+
+            </div>
+
+            <div class="info-footer">
+                <h3>Nuestra empresa</h3>
+
+                <ul>
+                    <li><a href="#">¿Quiénes somos?</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Representantes</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Colaboradores</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="aditional-footer-info">
+
+            <div class="redes-sociales-footer">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        </div>
+
+        <hr\>
+
+            <div class="MiHogar-info">
+                <p>© 2023 MiHogar SRL | Politicas de privacidad.</p>
+            </div>
+    </footer>
+
+    <script src="/Js/App.js"></script>
+    <script src="/Js/animation.js"></script>
+
+</body>
+
+</html>
